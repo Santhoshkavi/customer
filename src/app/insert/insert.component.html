@@ -1,0 +1,24 @@
+<p>insert works!</p>
+<h1>INSERT NEW CUSTOMER DETAILS</h1>
+<form>
+
+    <label for="customername">CustomerName:</label><br>
+    <input type="text" name="customername" [(ngModel)]="ad.customername"><br>
+
+    <label for="customerphno">CustomerPh.no:</label><br>
+    <input type="text" name="customerphno" [(ngModel)]="ad.customerphno"><br>
+
+    <label for="customeremail">CustomerEmail:</label><br>
+    <input type="email" name="customeremail" [(ngModel)]="ad.customeremail"><br>
+
+    <label for="customeraddress">CustomerAddress:</label><br>
+    <input type="text" name="customeraddress" [(ngModel)]="ad.customeraddress"><br>
+
+    <label for="amount">Amount:</label><br>
+    <input type="number" name="amount" [(ngModel)]="ad.amount"><br>
+
+    
+
+    <input type="button" value="save" (click)="add()">
+
+</form>

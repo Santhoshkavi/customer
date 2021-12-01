@@ -1,0 +1,27 @@
+<p>edit works!</p>
+<h1>EDIT CUSTOMER DETAILS</h1>
+<form>
+
+    <label for="customerID">CustomerId:</label><br>
+    <input type="text" name="customerID" [(ngModel)]="change.customerID"><br>
+
+    <label for="customername">CustomerName:</label><br>
+    <input type="text" name="customername" [(ngModel)]="change.customername"><br>
+
+    <label for="customerphno">CustomerPh.no:</label><br>
+    <input type="text" name="customerphno" [(ngModel)]="change.customerphno"><br>
+
+    <label for="customeremail">CustomerEmail:</label><br>
+    <input type="email" name="customeremail" [(ngModel)]="change.customeremail"><br>
+
+    <label for="customeraddress">CustomerAddress:</label><br>
+    <input type="text" name="customeraddress" [(ngModel)]="change.customeraddress"><br>
+
+    <label for="amount">Amount:</label><br>
+    <input type="number" name="amount" [(ngModel)]="change.amount"><br>
+
+    
+
+    <input type="button" value="save" (click)="edit()">
+
+</form>

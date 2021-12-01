@@ -1,0 +1,49 @@
+<p>details works!</p>
+<h1>search</h1>
+<input type="text"  name="customerID" [(ngModel)]="change.customername">
+<button (click)="search()">Search</button><br>
+<table border="1">
+    <tr>
+        <th>customerID</th>
+        <th>customername</th>
+        <th>customerphno</th>
+        <th>customeremail</th>
+        <th>customeraddress</th>
+    </tr>
+    <tr *ngFor="let dat of value" >
+        
+        <td>{{dat.customerID}}</td>
+        <td>{{dat.customername}}</td>
+        <td>{{dat.customerphno}}</td>
+        <td>{{dat.customeremail}}</td>
+        <td>{{dat.customeraddress}}</td>
+        <td><button (click)="edit(dat.customerID)">edit</button></td>
+        <td><button (click)="delete(dat.customerID)">delete</button></td>
+        
+      </tr>  
+
+    </table ><br><br>
+<button (click)="ok()">show details</button>
+
+    
+        <table border="1">
+        <tr>
+            <th>customerID</th>
+            <th>customername</th>
+            <th>customerphno</th>
+            <th>customeremail</th>
+            <th>customeraddress</th>
+        </tr>
+        <tr *ngFor="let data of val" >
+            
+            <td>{{data.customerID}}</td>
+            <td>{{data.customername}}</td>
+            <td>{{data.customerphno}}</td>
+            <td>{{data.customeremail}}</td>
+            <td>{{data.customeraddress}}</td>
+            <td><button (click)="edit(data.customerID)">edit</button></td>
+            <td><button (click)="delete(data.customerID)">delete</button></td>
+          </tr>  
+  
+        </table >
+    
